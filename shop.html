@@ -1,20 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <title>Shop</title>
-  </head>
-  <body></body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/shop.css">
+  <title>Shop</title>
+</head>
+
+<body>
+  <section class="shop-container">
+    <div class="filter-menu-container">
+      <div class="filter-menu-header">
+        <div class="filter-icon">
+          <img src="./images/Vector.png" alt="">
+          <img src="./images/Vector.png" alt="">
+          <img src="./images/Vector.png" alt="">
+        </div>
+        <div class="filter-menu-title">
+          <h6>Filter</h6>
+        </div>
+      </div>
+      <div class="filter-lists">
+        <div class="filter-categories">
+          <div class="categories-header">
+            <span>Categories</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="categories-menu">
+            <div class="single-category">
+              <div class="category-name">
+                <input id="allCategories" name="allCategories" type="checkbox">
+                <label for="allCategories">All Categories</label>
+              </div>
+              <span>(1450)</span>
+            </div>
+            <div class="single-category">
+              <div class="category-name">
+                <input id="business" name="business" type="checkbox">
+                <label for="business">Business</label>
+              </div>
+              <span>(140)</span>
+            </div>
+            <div class="single-category">
+              <div class="category-name">
+                <input id="kids" name="kids" type="checkbox">
+                <label for="kids">Kids</label>
+              </div>
+              <span>(309)</span>
+            </div>
+            <div class="single-category">
+              <div class="category-name">
+                <input id="art" name="art" type="checkbox">
+                <label for="art">Art</label>
+              </div>
+              <span>(102)</span>
+            </div>
+            <div class="single-category">
+              <div class="category-name">
+                <input id="history" name="history" type="checkbox">
+                <label for="history">History</label>
+              </div>
+              <span>(204)</span>
+            </div>
+            <div class="single-category">
+              <div class="category-name">
+                <input id="romance" name="romance" type="checkbox">
+                <label for="romance">Romance</label>
+              </div>
+              <span>(89)</span>
+            </div>
+            <div class="single-category">
+              <div class="category-name">
+                <input id="fantasy" name="fantasy" type="checkbox">
+                <label for="fantasy">Fantasy</label>
+              </div>
+              <span>(47)</span>
+            </div>
+            <div class="single-category">
+              <div class="category-name">
+                <input id="" name="" type="checkbox">
+                <label for="">All Categories</label>
+              </div>
+              <span>(163)</span>
+            </div>
+            <div class="single-category">
+              <div class="category-name">
+                <input id="selfHelp" name="selfHelp" type="checkbox">
+                <label for="selfHelp">Self Help</label>
+              </div>
+              <span>(1990)</span>
+            </div>
+            <div class="single-category">
+              <div class="category-name">
+                <input id="cooking" name="cooking" type="checkbox">
+                <label for="cooking">Cooking</label>
+              </div>
+              <span>(211)</span>
+            </div>
+            <div class="single-category">
+              <div class="category-name">
+                <input id="sports" name="sports" type="checkbox">
+                <label for="sports">Sports</label>
+              </div>
+              <span>(92)</span>
+            </div>
+          </div>
+          <div class="category-btn">
+            <p>Load More</p>
+          </div>
+        </div>
+        <div class="filter-publisher">
+          <span>Publisher</span>
+          <i class="fas fa-angle-right"></i>
+        </div>
+        <div class="filter-year">
+          <span>Year</span>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </html>
