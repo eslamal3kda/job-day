@@ -20,18 +20,23 @@ body {
     display: flex;
     flex-direction: column;
     width: 18.5rem;
+    flex-shrink: 0;
 }
 .filter-menu-header {
     display: flex;
     gap: 1rem;
     align-items: center;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 .filter-icon{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.filter-icon img:nth-child(2) {
+    transform:rotate(180deg) ;
 }
 .filter-menu-header h6  {
     font-size: 1.5rem;
@@ -96,4 +101,284 @@ body {
     background-color: #FFF;
     border-radius:0.5rem ;
     cursor: pointer;
+}
+
+/* Shop Content Style */
+
+.shop-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.shop-content  .search-section {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+
+.search-section .search-input {
+    flex-grow: 1;
+    position: relative;
+}
+.search-section .search-input input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding-inline: 1.5rem;
+}
+.search-section .search-input img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.search-section .search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* padding-inline-end: 1rem; */
+    background-color: #FFF;
+}
+.search-section .search-input .search-btn img {
+    padding-right: 1rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+
+}
+
+.search-section .sort-btn {
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.5);
+    padding-block: 10px;
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+
+/* categories section  */
+
+.categories-section {
+    display: flex;
+    gap: 12px;
+    margin-top: 1.5rem;
+}
+
+.categories-section .category-item {
+    padding-block: 10px;
+    padding-inline: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.categories-section .category-item:hover {
+    background-color: var(--main-color);
+    opacity: 0.5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+ .cards-container .book-card {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 4rem;
+}
+
+.cards-container .book-card .book-image{
+    width: 173px;
+    height:253px ;
+    flex-shrink: 0;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+} 
+
+.book-card .book-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.book-details-container {
+    width: 100%;
+    display: flex;
+    gap: 35px;
+}
+
+.book-details-container .book-details ,.book-details-container .book-discount {
+    width: calc((100% - 35px) / 3);
+}
+.book-details-container .book-details {
+    flex-grow: 1;
+}
+.book-details-container .book-details h5 {
+    font-size: 18px;
+}
+.book-details-container .book-details p {
+    font-size: 15px;
+}
+/* #EBC305 */
+.book-details-container .book-discount {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.book-details-container .book-discount span {
+    padding-block:0.5rem ;
+    padding-inline: 12px;
+    font-size: 14px;
+    color: #EBC305;
+    border: 1px solid #EBC305;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.book-functionality {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.book-functionality .more-details .rating {
+    display: flex;
+    gap: 1rem;
+}
+.book-functionality .more-details .rating i:not(:last-child) {
+    color: #EBC305;
+}
+.book-functionality .more-details .rating i:last-child{
+    opacity: 0.5;
+}
+
+.book-functionality .more-details .rating span {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+.book-functionality .more-details p span {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+.book-functionality .author-details {
+    display: flex;
+    gap: 40px;
+}
+
+.book-functionality .author-details span {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.book-functionality .add-to-cart-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+.book-functionality .add-to-cart-section .book-price p {
+    font-size: 28px;
+    font-weight: 600;
+}
+.book-functionality .add-to-cart-section .book-card-buttons {
+    display: flex;
+    gap: 1rem;
+}
+/* #D9176C */
+.book-functionality .add-to-cart-section .add-to-cart-btn {
+    background-color: #D9176C ;
+    color: #fff;
+    padding-block: 13px;
+    padding-inline: 18px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+.book-functionality .add-to-cart-section .add-to-cart-btn:hover {
+    opacity: 0.8;
+}
+.book-functionality .add-to-cart-section .add-to-like-btn{
+    background-color: #FFF ;
+    color: #D9176C;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: 1px solid #D9176C;
+    border-radius: 0.5rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+}
+
+.book-functionality .add-to-cart-section .add-to-like-btn:hover {
+    opacity: 0.8;
+}
+.shop-content .pagination-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.shop-content .pagination-buttons .page-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.shop-content .pagination-buttons .page-numbers .page-number {
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #D9176C;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.shop-content .pagination-buttons .page-numbers .page-number:hover {
+    background-color: var(--main-color);
+    color: #FFF;
+}
+.shop-content .pagination-buttons .previous , .shop-content .pagination-buttons .next {
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+.shop-content .pagination-buttons .previous {
+    opacity: 0.5;
 }
