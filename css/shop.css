@@ -76,6 +76,9 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.category-name label:hover , .category-name input:hover {
+    cursor: pointer;
+}
 
 .categories-menu .single-category .category-name {
     display: flex;
@@ -116,8 +119,10 @@ body {
     display: flex;
     gap: 1.5rem;
 }
-
-
+.search-input-container {
+    flex-grow: 1;
+    display: flex;
+}
 
 .search-section .search-input {
     flex-grow: 1;
@@ -131,6 +136,7 @@ body {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     padding-inline: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .search-section .search-input img {
     position: absolute;
@@ -144,14 +150,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* padding-inline-end: 1rem; */
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.1rem;
     background-color: #FFF;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 0;
 }
-.search-section .search-input .search-btn img {
-    padding-right: 1rem;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
 
-
+.search-btn i {
+    color: var(--main-color);
 }
 
 .search-section .sort-btn {
@@ -381,4 +391,74 @@ body {
 }
 .shop-content .pagination-buttons .previous {
     opacity: 0.5;
+}
+
+@media (max-width:1280px){
+    .book-card {
+        flex-direction: column;
+    }
+    .filter-menu-container{
+        width: 17.5rem;
+    }
+}
+
+@media (max-width:1024px){
+    .cards-container .book-card {
+        gap: 20px;
+    }
+    .book-details-container {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .book-details-container .book-details {
+        width: 100%;
+    }
+    .book-details-container .book-details ,.book-details-container .book-discount  {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .filter-menu-container{
+        width: 15.5rem;
+    }
+}
+
+@media (max-width:850px){
+    .filter-menu-container{
+        width: 13.5rem;
+    }
+    .cards-container .book-card .book-image{
+        width: 143px;
+        height: 223px;
+    }
+    .book-details-container .book-discount span {
+        font-size: 12px
+    }
+    .book-card .book-content {
+        gap: 1rem;
+    }
+    .book-functionality {
+        flex-direction: column;
+    }
+    .book-functionality .add-to-cart-section .add-to-cart-btn {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width:768px){
+    .filter-menu-container{
+        display: none;
+    }
+    .shop-content .search-section {
+        flex-direction: column;
+    }
+    .shop-content .search-section .search-input-container{
+        height: 3rem;
+    }
+    .cards-container .book-card {
+        align-items: center;
+    }
 }
